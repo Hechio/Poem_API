@@ -27,5 +27,5 @@ from .models import Poem
 class PoemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Poem
-        fields = ['id', 'title', 'poem', 'poet', 'likes']
-
+        # fields = ['id', 'title', 'poem', 'poet', 'likes']
+        fields = '__all__'
